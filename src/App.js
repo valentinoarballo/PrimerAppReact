@@ -1,13 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
 import Clock from "./components/reloj.jsx"
+import Saludar from './components/saludar';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Hora Actual</h1>
+        
+        <Saludar 
+        nombre="Valentino" 
+        apellido="Arballo"/>
+        
         <Clock />
+      
       </header>
     </div>
   );

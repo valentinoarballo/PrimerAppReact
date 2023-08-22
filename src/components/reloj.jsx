@@ -19,7 +19,7 @@ class Clock extends Component {
     
       componentWillUnmount() {
         clearInterval(this.intervalID);
-      }
+      } 
 
     render () {
         var tiempoActual = new Date();
