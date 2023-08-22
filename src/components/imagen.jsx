@@ -10,5 +10,4 @@ function MostrarImagen () {
     )
 }
 
-
 export default MostrarImagen;
