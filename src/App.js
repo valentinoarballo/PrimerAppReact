@@ -1,9 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
-import Clock from "./components/reloj.jsx"
+import 'react-toastify/dist/ReactToastify.css';
+import Clock from "./components/reloj"
 import Saludar from './components/saludar';
+import Toast from './components/toast';
+import MostrarImagen from './components/imagen';
+
+
 
 function App() {
+
   return (
     <div className="App">
       <header className="App-header">
@@ -13,7 +19,11 @@ function App() {
         apellido="Arballo"/>
         
         <Clock />
-      
+        
+        <Toast />
+
+        <MostrarImagen />
+
       </header>
     </div>
   );
