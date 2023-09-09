@@ -1,12 +1,14 @@
-import './App.css';
+  import './App.css';
 import 'react-toastify/dist/ReactToastify.css';
 import Reloj from "./components/reloj"
 import Saludar from './components/saludar';
 import Toast from './components/toast';
 import MostrarImagen from './components/imagen';
+import TrakMouse from './components/trackMouse';
 import Personas from './components/personas';
 import { Test } from './components/test';
 import { useState } from 'react';
+import Formulario from './components/formulario';
 
 function App() {
   const [isToggled, setIsToggled] = useState(false);
@@ -22,6 +24,8 @@ function App() {
         apellido="Arballo"/>
         
         <Reloj />
+
+        <Formulario/>
         
         <Toast />
 
@@ -29,8 +33,10 @@ function App() {
 
         <Personas listaNombres={listaNombres} listaEdades = {listaEdades}/>
         <button onClick={() => setIsToggled(!isToggled)}>toggle</button>
-        {isToggled && <Test />}
+        
         {isToggled ? <Test /> : <p>not toggled</p>}
+
+        <TrakMouse/>
 
       </header>
     </div>
