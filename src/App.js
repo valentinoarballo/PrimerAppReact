@@ -3,6 +3,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import Reloj from "./components/reloj"
 import Saludar from './components/saludar';
 import Toast from './components/toast';
+import svgCirculo from './components/svgCirculo';
 import MostrarImagen from './components/imagen';
 import TrakMouse from './components/trackMouse';
 import Personas from './components/personas';
@@ -22,6 +23,15 @@ function App() {
         <Saludar 
         nombre="Valentino" 
         apellido="Arballo"/>
+
+        <svgCirculo 
+          viewPortHeight = "200"
+          viewPortwidth = "200"
+          rectWidht =  "200"
+          rectHeight =  "200"
+          rectFill =  "black"
+          circleFill = "blue"
+        />        
         
         <Reloj />
 

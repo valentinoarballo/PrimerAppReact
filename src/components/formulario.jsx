@@ -12,7 +12,7 @@ class Formulario extends Component {
 
     handleSubmit = (e) => {
         e.preventDefault() 
-        alert("nombre: "+this.state.nombre)
+        alert("nombre: "+this.state.nombre+" correo: "+this.state.correo)
     }
 
     handleOnChangeNombre = (e) => {
@@ -21,10 +21,11 @@ class Formulario extends Component {
             nombre: e.target.value
         })
     }
+
     handleOnChangeCorreo = (e) => {
         this.setState({
             ...this.state,
-            nombre: e.target.value
+            correo: e.target.value
         })
     }
 
@@ -45,10 +46,11 @@ class Formulario extends Component {
                     <p>
                         <label htmlFor="correo">Correo</label>
                         <input 
-                        id="correo" 
-                        placeholder="John@Doe" 
-                        value={correo}
-                        onChange={this.handleOnChangeCorreo}/>
+                            id="correo" 
+                            placeholder="John@Doe" 
+                            value={correo}
+                            onChange={this.handleOnChangeCorreo}
+                        />
                     </p>
                     <p>
                         <button type="submit">Suscribe</button>
