@@ -11,7 +11,7 @@ class Formulario extends Component {
     }
 
     handleSubmit = (e) => {
-        e.preventDefault() 
+        // e.preventDefault() 
         alert("nombre: "+this.state.nombre+" correo: "+this.state.correo)
     }
 
